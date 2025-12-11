@@ -1,0 +1,11 @@
+resources:
+  - flux-system/gotk-components.yaml
+  - infrastructure/helmrepos.yaml
+  - infrastructure/traefik/helmrelease.yaml
+  - infrastructure/metal-lb/helmrelease.yaml
+  - infrastructure/longhorn/helmrelease.yaml
+  - infrastructure/jetstack-helmrepo.yaml
+  - monitoring/prometheus/helmrepo.yaml
+  - monitoring/prometheus/helmrelease.yaml
+  - monitoring/grafana/deployment.yaml
+  - apps/jellyfin/kustomization.yaml

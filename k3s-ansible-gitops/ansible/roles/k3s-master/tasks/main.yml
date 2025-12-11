@@ -10,3 +10,9 @@
     INSTALL_K3S_VERSION={{ k3s_version }} K3S_TOKEN='{{ k3s_token }}' sh /opt/k3s-setup/install_k3s.sh --write-kubeconfig-mode 0644 {{ k3s_extra_args }}
   args:
     creates: /etc/rancher/k3s/k3s.yaml
+
+- name: Ensure /root/.kube exists for bootstrap tasks
+  file:
+    path: /root/.kube
+    state: directory
+    mode: 0700

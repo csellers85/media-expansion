@@ -13,12 +13,6 @@
       - ca-certificates
       - gnupg
       - software-properties-common
+      - unzip
+      - sudo
     state: present
-
-- name: Create directory for k3s installs
-  file:
-    path: /opt/k3s-setup
-    state: directory
-    owner: root
-    group: root
-    mode: 0755
