@@ -1,0 +1,24 @@
+---
+- name: Ensure apt cache is up to date
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Install common packages
+  apt:
+    name:
+      - curl
+      - git
+      - apt-transport-https
+      - ca-certificates
+      - gnupg
+      - software-properties-common
+    state: present
+
+- name: Create directory for k3s installs
+  file:
+    path: /opt/k3s-setup
+    state: directory
+    owner: root
+    group: root
+    mode: 0755

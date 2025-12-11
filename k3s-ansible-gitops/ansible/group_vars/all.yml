@@ -1,0 +1,8 @@
+ansible_user: ubuntu
+k3s_version: 'v1.33.6+k3s1'
+gitops_repo_url: 'git@github.com:YOURUSER/k3s-gitops.git'
+gitops_branch: 'main'
+flux_namespace: flux-system
+k3s_token: ''
+iid_prefix: 'k3s'
+k3s_extra_args: "--disable servicelb"

@@ -1,0 +1,12 @@
+---
+- hosts: k3s_masters
+  become: yes
+  roles:
+    - base
+    - k3s-master
+
+- hosts: k3s_workers
+  become: yes
+  roles:
+    - base
+    - k3s-worker
