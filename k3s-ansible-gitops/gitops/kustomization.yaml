@@ -5,16 +5,10 @@ resources:
 - flux-system/gotk-components.yaml
 
 # Infrastructure
-- infrastructure/helmrepos.yaml
-- infrastructure/traefik/helmrelease.yaml
-- infrastructure/metal-lb/helmrelease.yaml
-- infrastructure/longhorn/helmrelease.yaml
-- infrastructure/jetstack-helmrepo.yaml
+- infrastructure
 
 # Monitoring
-- monitoring/prometheus/helmrepo.yaml
-- monitoring/prometheus/helmrelease.yaml
-- monitoring/grafana/deployment.yaml
+- monitoring
 
 # Apps
 - apps/jellyfin # <-- point to folder, not the kustomization.yaml file
