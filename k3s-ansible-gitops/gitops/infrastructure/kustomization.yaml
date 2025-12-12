@@ -7,5 +7,5 @@ resources:
 - metal-lb/helmrelease.yaml
 - longhorn/helmrelease.yaml
 - jetstack-helmrepo.yaml
-- reflector/helmrelease.yaml
 - reflector/helmrepo.yaml
+- reflector/helmrelease.yaml
