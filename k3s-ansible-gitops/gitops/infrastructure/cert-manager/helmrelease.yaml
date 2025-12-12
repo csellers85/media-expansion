@@ -9,9 +9,8 @@ spec:
     remediation:
       retries: -1
     createNamespace: true
+    crds: CreateReplace
   upgrade:
     remediation:
       retries: -1
     crds: CreateReplace
-  values:
-    installCRDs: true
