@@ -5,6 +5,13 @@ metadata:
   namespace: cert-manager
 spec:
   interval: 1m
+  chart:
+    spec:
+      chart: cert-manager
+      sourceRef:
+        kind: HelmRepository
+        name: jetstack
+        namespace: flux-system
   install:
     remediation:
       retries: -1
