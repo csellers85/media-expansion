@@ -4,6 +4,3 @@ resources:
 - clusterissuer-staging.yaml
 - clusterissuer-production.yaml
 - wildcard-certificate.yaml
-dependsOn:
-- name: cert-manager
-  namespace: flux-system
