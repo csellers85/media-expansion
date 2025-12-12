@@ -7,6 +7,7 @@ resources:
 # Infrastructure
 - infrastructure
 - infrastructure/cert-manager
+- infrastructure/cert-manager-resources
 
 # Monitoring
 - monitoring
