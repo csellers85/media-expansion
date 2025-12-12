@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+- grafana/namespace.yml
 - prometheus/helmrepo.yaml
 - prometheus/helmrelease.yaml
 - grafana/deployment.yaml
