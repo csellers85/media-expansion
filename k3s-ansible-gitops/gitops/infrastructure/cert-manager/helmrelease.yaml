@@ -14,3 +14,5 @@ spec:
     remediation:
       retries: -1
     crds: CreateReplace
+  values:
+    installCRDs: true
