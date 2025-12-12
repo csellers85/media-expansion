@@ -3,6 +3,4 @@ kind: Kustomization
 resources:
 - helmrepo.yaml
 - helmrelease.yaml
-- clusterissuer-staging.yaml
-- clusterissuer-production.yaml
-- wildcard-certificate.yaml
+- namespace.yaml
