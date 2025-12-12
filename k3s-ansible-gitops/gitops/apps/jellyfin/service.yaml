@@ -1,8 +1,4 @@
 apiVersion: v1
-kind: Namespace
-metadata:
-  name: media
-apiVersion: v1
 kind: Service
 metadata:
   name: jellyfin
@@ -11,7 +7,7 @@ spec:
   selector:
     app: jellyfin
   ports:
-    - protocol: TCP
-      port: 8096
-      targetPort: 8096
+  - protocol: TCP
+    port: 8096
+    targetPort: 8096
   type: ClusterIP
