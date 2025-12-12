@@ -14,7 +14,3 @@ spec:
           apiTokenSecretRef:
             name: cloudflare-api-token-secret
             key: api-token
-    dependsOn:
-    - name: cert-manager
-      namespace: cert-manager
-    wait: true
