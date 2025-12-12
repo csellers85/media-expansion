@@ -6,6 +6,5 @@ resources:
 - traefik/helmrelease.yaml
 - metal-lb/helmrelease.yaml
 - longhorn/helmrelease.yaml
-- jetstack-helmrepo.yaml
 - reflector/helmrepo.yaml
 - reflector/helmrelease.yaml
