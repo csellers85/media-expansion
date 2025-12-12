@@ -3,10 +3,10 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- kustomization-crds.yaml
 - kustomization-cert-manager.yaml
 - kustomization-cert-manager-resources.yaml
-spec:
-  decryption:
-    provider: sops
-    secretRef:
-      name: sops-age
+- ../infrastructure/kustomization.yaml
+- ../apps/jellyfin/kustomization.yaml
+- ../monitoring/kustomization.yaml
+- ../secrets/kustomization.yaml
