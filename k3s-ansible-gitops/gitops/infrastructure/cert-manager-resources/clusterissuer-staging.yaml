@@ -5,11 +5,12 @@ metadata:
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
-    email:
+    emailSecretRef:
+      name: cloudflare-email
+      key: email
     privateKeySecretRef:
       name: letsencrypt-staging
-    solvers: cloudeflare-email
-    key: email
+    solvers:
     - dns01:
         cloudflare:
           apiTokenSecretRef:
