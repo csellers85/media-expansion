@@ -5,9 +5,7 @@ metadata:
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
-    emailSecretRef:
-      name: cloudflare-email
-      key: email
+    email: charles.sellers.85@gmail.com
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
