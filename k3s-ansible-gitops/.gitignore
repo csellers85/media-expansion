@@ -1,0 +1,2 @@
+./media-expansion/k3s-ansible-gitops/gitops/secrets/cert-manager.yaml
+./media-expansion/k3s-ansible-gitops/.gitignore
