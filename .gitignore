@@ -1,1 +1,3 @@
-media-expansion/k3s-ansible-gitops/gitops/secrets/cert-manager.yaml
+k3s-ansible-gitops/gitops/secrets/cert-manager.yaml
+k3s-ansible-gitops/gitops/secrets/*.plain.yaml
+k3s-ansible-gitops/gitops/secrets/*.unencrypted.yaml
