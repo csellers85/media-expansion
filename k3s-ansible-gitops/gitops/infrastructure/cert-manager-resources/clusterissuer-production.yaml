@@ -5,12 +5,15 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: you@example.com
+    email: charles.sellers.85+cf@gmail.com
     privateKeySecretRef:
       name: letsencrypt-production
     solvers:
     - dns01:
         cloudflare:
           apiTokenSecretRef:
-            name: cloudflare-api-token-secret
-            key: api-token
+            name: cloudflare-secret
+            key: apiKey
+      selector:
+        dnsZones:
+        - "ckcjsellers.com"
